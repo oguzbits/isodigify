@@ -1,0 +1,48 @@
+.login {
+  height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  @media screen and (max-width: 830px) {
+    grid-template-columns: 1fr;
+  }
+  .login-container {
+    font-size: 16px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20vh auto;
+    padding: 0 20px;
+    .login-header {
+      text-align: center;
+      img {
+        margin-bottom: 20px;
+        width: 110px;
+      }
+      margin-bottom: 60px;
+    }
+    .form {
+      display: grid;
+      grid-gap: 20px;
+      &.login-button {
+        text-align: center;
+        margin-bottom: 40px;
+        grid-auto-flow: row;
+      }
+      &.end {
+        text-align: center;
+      }
+    }
+    a {
+      color: #3999f9;
+    }
+  }
+  .particles {
+    display: grid;
+    background: rgb(17, 23, 31);
+    background-repeat: no-repeat;
+    @media screen and (max-width: 830px) {
+      display: none;
+    }
+  }
+}

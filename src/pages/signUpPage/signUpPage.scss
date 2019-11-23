@@ -1,0 +1,50 @@
+.signup {
+  height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  @media screen and (max-width: 769px) {
+    grid-template-columns: 1fr;
+  }
+  .signup-container {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 15vh auto;
+    padding: 0 20px;
+    .signup-header {
+      text-align: center;
+      img {
+        margin-bottom: 20px;
+        width: 110px;
+      }
+      margin-bottom: 20px;
+    }
+    .form {
+      display: grid;
+      grid-gap: 20px;
+      &.name {
+        grid-auto-flow: column;
+      }
+      &.signup-button {
+        text-align: center;
+        margin-bottom: 40px;
+        grid-auto-flow: row;
+      }
+      &.end {
+        text-align: center;
+      }
+    }
+    a {
+      color: #3999f9;
+    }
+  }
+  .particles {
+    display: grid;
+    background: rgb(17, 23, 31);
+    background-repeat: no-repeat;
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+  }
+}

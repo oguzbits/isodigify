@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import lineart from "../../images/lineart.svg";
 import "./intro.scss";
@@ -16,7 +17,9 @@ const Intro = () => {
             continuous deployment, serverless functions, and so much more.
           </p>
           <div className="button-intro">
-            <button>Get started for free</button>
+            <Link to={"/signup"}>
+              <button className="button">Get started for free</button>
+            </Link>
           </div>
         </div>
       </div>

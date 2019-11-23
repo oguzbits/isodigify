@@ -33,7 +33,7 @@ const Pricing = () => {
             <p>per month</p>
           </div>
           <Link to={"/signup"}>
-            <button>Get started for free</button>
+            <button className="button">Get started for free</button>
           </Link>
           <div className="starter-bullets">
             <p>Custom domains & HTTPS</p>
@@ -54,7 +54,7 @@ const Pricing = () => {
             <p>per month</p>
           </div>
           <Link to={"/signup"}>
-            <button>Get started</button>
+            <button className="button">Get started</button>
           </Link>
           <div className="pro-bullets">
             <h4>Everything from Starter +</h4>
@@ -75,7 +75,7 @@ const Pricing = () => {
             <p>per month</p>
           </div>
           <Link to={"/signup"}>
-            <button>Contact sales</button>
+            <button className="button ghost">Contact sales</button>
           </Link>
           <div className="enterprise-bullets">
             <h4>Everything from Pro +</h4>

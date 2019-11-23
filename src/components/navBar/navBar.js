@@ -63,7 +63,7 @@ const NavBar = props => {
                 <Hidden mdDown>
                   <ul>
                     <Link to={"/signup"}>
-                      <button>Sign up →</button>
+                      <button className="button ghost">Sign up →</button>
                     </Link>
                     <li>
                       <Link to={"/login"}>Log in</Link>

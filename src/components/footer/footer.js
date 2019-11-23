@@ -15,11 +15,6 @@ const Footer = () => {
           <Link to={"/"}>
             <img className="isodigify-logo" src={logo} alt="isodigify-logo" />
           </Link>
-          {/* <div className="footer-icons">
-            <TwitterIcon />
-            <FacebookIcon />
-            <LinkedInIcon />
-          </div> */}
           <div className="footer-icons">
             <ul>
               <li>

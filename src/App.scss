@@ -69,7 +69,7 @@ a {
   }
 }
 
-button {
+.button {
   -webkit-appearance: none;
   display: inline-block;
   text-decoration: none;
@@ -91,5 +91,19 @@ button {
   &:hover {
     border: 2px solid #0666c6;
     background-color: #0666c6;
+  }
+  &.ghost {
+    border: 2px solid #3999f9;
+    color: #3999f9;
+    background-color: transparent;
+    &:hover {
+      background-color: #3999f9;
+      border: 2px solid #3999f9;
+      color: white;
+    }
+  }
+  &.submit {
+    max-width: inherit;
+    border-radius: 4px;
   }
 }
