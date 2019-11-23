@@ -50,13 +50,15 @@ const NavBar = props => {
                 <Hidden smDown>
                   <ul>
                     <li>
-                      <Link to={"/products"}>Products</Link>
+                      <p>Products</p>
+                      {/* <Link to={"/products"}>Products</Link> */}
                     </li>
                     <li>
                       <Link to={"/pricing"}>Pricing</Link>
                     </li>
                     <li>
-                      <Link to={"/news"}>News</Link>
+                      <p>Blog</p>
+                      {/* <Link to={"/news"}>Blog</Link> */}
                     </li>
                   </ul>
                 </Hidden>
