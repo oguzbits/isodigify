@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop/scrollToTop";
 import LandingPage from "./pages/landingPage/landingPage";
 import PricingPage from "./pages/pricingPage/pricingPage";
@@ -17,7 +17,9 @@ function App() {
           <Route path="/" exact component={LandingPage} />
           <Route path="/pricing" component={PricingPage} />
           <Route path="/signup" component={SignUpPage} />
+          <Redirect from="/" exact to="/signup" />
           <Route path="/login" component={LogInPage} />
+          <Redirect from="/" exact to="/login" />
         </Switch>
       </div>
     </BrowserRouter>
