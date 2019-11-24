@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop/scrollToTop";
 import LandingPage from "./pages/landingPage/landingPage";
 import PricingPage from "./pages/pricingPage/pricingPage";
@@ -13,10 +13,12 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <div className="App">
-        <Route path="/" exact component={LandingPage} />
-        <Route path="/pricing" component={PricingPage} />
-        <Route path="/signup" component={SignUpPage} />
-        <Route path="/login" component={LogInPage} />
+        <Switch>
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/pricing" component={PricingPage} />
+          <Route path="/signup" component={SignUpPage} />
+          <Route path="/login" component={LogInPage} />
+        </Switch>
       </div>
     </BrowserRouter>
   );
