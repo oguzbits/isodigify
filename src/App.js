@@ -14,9 +14,9 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <Route path="/" exact component={LandingPage} />
-        <Route path="/pricing" exact component={PricingPage} />
-        <Route path="/signup" exact component={SignUpPage} />
-        <Route path="/login" exact component={LogInPage} />
+        <Route path="/pricing" component={PricingPage} />
+        <Route path="/signup" component={SignUpPage} />
+        <Route path="/login" component={LogInPage} />
       </div>
     </BrowserRouter>
   );

@@ -26,7 +26,12 @@ const MyTextField = ({ ...props }) => {
   // const errorText = meta.error && meta.touched ? meta.error : "";
   const errorText = meta.error && meta.touched ? "(Required)" : "";
   return (
-    <TextField {...field} {...props} helperText={errorText} error={!!errorText} />
+    <TextField
+      {...field}
+      {...props}
+      helperText={errorText}
+      error={!!errorText}
+    />
   );
 };
 
@@ -118,11 +123,17 @@ export default function SignUpPage() {
                 Sign up
               </button>
             </div>
-            <div className="form end">
-              <h4>Already have an account?</h4>
-              <Link to={"/login"}>Log in</Link>
-              <Copyright />
-            </div>
+            <ul className="form end">
+              <li>
+                <h4>Already have an account?</h4>
+              </li>
+              <li>
+                <Link to={"/login"}>Log in</Link>
+              </li>
+              <li>
+                <Copyright />
+              </li>
+            </ul>
           </Form>
         </Formik>
       </div>

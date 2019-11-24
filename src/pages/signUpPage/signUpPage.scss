@@ -6,12 +6,13 @@
   overflow: hidden;
   @media screen and (max-width: 769px) {
     grid-template-columns: 1fr;
+    overflow-y: auto;
   }
   .signup-container {
     font-size: 16px;
     max-width: 500px;
-    margin: 15vh auto;
-    padding: 0 20px;
+    margin: auto;
+    padding: 20px;
     .signup-header {
       text-align: center;
       img {
@@ -32,6 +33,8 @@
         grid-auto-flow: row;
       }
       &.end {
+        margin: 0;
+        padding: 0;
         text-align: center;
       }
     }
@@ -42,7 +45,6 @@
   .particles {
     display: grid;
     background: rgb(17, 23, 31);
-    background-repeat: no-repeat;
     @media screen and (max-width: 769px) {
       display: none;
     }

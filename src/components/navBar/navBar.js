@@ -91,31 +91,29 @@ const NavBar = props => {
               </div>
             </Toolbar>
             {toggle && (
-              <div className="nav-toggle">
-                <Toolbar>
-                  <ul>
-                    <Hidden only={["md", "lg", "xl"]}>
-                      <li>
-                        <Link to={"/products"}>Products</Link>
-                      </li>
-                      <li>
-                        <Link to={"/pricing"}>Pricing</Link>
-                      </li>
-                      <li>
-                        <Link to={"/news"}>News</Link>
-                      </li>
-                    </Hidden>
-                    <Hidden lgUp>
-                      <Link to={"/signup"}>
-                        <button>Sign up →</button>
-                      </Link>
-                      <li>
-                        <Link to={"/login"}>Log in</Link>
-                      </li>
-                    </Hidden>
-                  </ul>
-                </Toolbar>
-              </div>
+              <ul className="nav-toggle">
+                <Hidden only={["md", "lg", "xl"]}>
+                  <li>
+                    <Link to={"/products"}>Products</Link>
+                  </li>
+                  <li>
+                    <Link to={"/pricing"}>Pricing</Link>
+                  </li>
+                  <li>
+                    <Link to={"/news"}>News</Link>
+                  </li>
+                </Hidden>
+                <Hidden lgUp>
+                  <li>
+                    <Link to={"/signup"}>
+                      <button className="button ghost">Sign up →</button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/login"}>Log in</Link>
+                  </li>
+                </Hidden>
+              </ul>
             )}
           </AppBar>
         </ElevationScroll>
