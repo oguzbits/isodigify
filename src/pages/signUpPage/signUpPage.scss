@@ -43,6 +43,7 @@
     }
   }
   .particles {
+    height: 100vh;
     display: grid;
     background: rgb(17, 23, 31);
     @media screen and (max-width: 769px) {
